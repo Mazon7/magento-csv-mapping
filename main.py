@@ -31,6 +31,7 @@ def attribute_set_code(row, row_default):
 # This function adds all other properties from Properties file
 def add_properties(row, col_num, col_name, choose_category):
 
+    # Read All Excell Sheets
     wb = load_workbook(attributes_filename)
 
     brand = wb["brand"]
@@ -575,4 +576,5 @@ def run_app():
     mainloop()
 
 
+# Run app
 run_app()
